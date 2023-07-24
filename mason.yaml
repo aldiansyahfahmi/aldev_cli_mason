@@ -1,0 +1,5 @@
+bricks:
+  init:
+    path: bricks/init
+  feature:
+    path: bricks/feature
