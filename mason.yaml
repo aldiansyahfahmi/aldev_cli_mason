@@ -3,3 +3,5 @@ bricks:
     path: bricks/init
   feature:
     path: bricks/feature
+  cubit:
+    path: bricks/cubit

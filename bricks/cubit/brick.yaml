@@ -1,4 +1,4 @@
-name: feature
+name: cubit
 description: A new brick created with the Mason CLI.
 
 # The following defines the brick repository url.
@@ -29,5 +29,10 @@ vars:
   name:
     type: string
     description: Your name
-    default: Feature
-    prompt: What is your feature name?
+    default: Cubit
+    prompt: What is your cubit name?
+  on:
+    type: string
+    description: Your name
+    default: Cubit
+    prompt: Where do you want to make this (Feature Name)?
