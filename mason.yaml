@@ -5,3 +5,5 @@ bricks:
     path: bricks/feature
   cubit:
     path: bricks/cubit
+  bloc:
+    path: bricks/bloc
