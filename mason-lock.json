@@ -1,1 +1,13 @@
-{"bricks":{"bloc":{"path":"/Users/aldiansyahfahmi/Documents/AppDev/Mason Project/aldev_cli_mason/bricks/bloc"},"cubit":{"path":"/Users/aldiansyahfahmi/Documents/AppDev/Mason Project/aldev_cli_mason/bricks/cubit"},"feature":{"path":"/Users/aldiansyahfahmi/Documents/AppDev/Mason Project/aldev_cli_mason/bricks/feature"},"init":{"path":"/Users/aldiansyahfahmi/Documents/AppDev/Mason Project/aldev_cli_mason/bricks/init"}}}
+{
+  "bricks": {
+    "v1_bloc": { "path": "/Users/aldiansyahfahmi/Documents/AppDev/Mason Project/code_generator/bricks/v1/v1_bloc" },
+    "v1_cubit": { "path": "/Users/aldiansyahfahmi/Documents/AppDev/Mason Project/code_generator/bricks/v1/v1_cubit" },
+    "v1_domain": { "path": "/Users/aldiansyahfahmi/Documents/AppDev/Mason Project/code_generator/bricks/v1/v1_domain" },
+    "v1_init": { "path": "/Users/aldiansyahfahmi/Documents/AppDev/Mason Project/code_generator/bricks/v1/v1_init" },
+    "v1_presentation": { "path": "/Users/aldiansyahfahmi/Documents/AppDev/Mason Project/code_generator/bricks/v1/v1_presentation" },
+    "v2_bloc": { "path": "/Users/aldiansyahfahmi/Documents/AppDev/Mason Project/code_generator/bricks/v2/v2_bloc" },
+    "v2_cubit": { "path": "/Users/aldiansyahfahmi/Documents/AppDev/Mason Project/code_generator/bricks/v2/v2_cubit" },
+    "v2_feature": { "path": "/Users/aldiansyahfahmi/Documents/AppDev/Mason Project/code_generator/bricks/v2/v2_feature" },
+    "v2_init": { "path": "/Users/aldiansyahfahmi/Documents/AppDev/Mason Project/code_generator/bricks/v2/v2_init" }
+  }
+}

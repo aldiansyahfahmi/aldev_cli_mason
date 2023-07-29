@@ -1,9 +1,19 @@
 bricks:
-  init:
-    path: bricks/init
-  feature:
-    path: bricks/feature
-  cubit:
-    path: bricks/cubit
-  bloc:
-    path: bricks/bloc
+  v1_init:
+    path: bricks/v1/v1_init
+  v1_presentation:
+    path: bricks/v1/v1_presentation
+  v1_domain:
+    path: bricks/v1/v1_domain
+  v1_cubit:
+    path: bricks/v1/v1_cubit
+  v1_bloc:
+    path: bricks/v1/v1_bloc
+  v2_init:
+    path: bricks/v2/v2_init
+  v2_feature:
+    path: bricks/v2/v2_feature
+  v2_cubit:
+    path: bricks/v2/v2_cubit
+  v2_bloc:
+    path: bricks/v2/v2_bloc
