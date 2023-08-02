@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
       splitScreenMode: true,
       builder: (context, child) {
         return MaterialApp(
-          title: AppConstants.app.appName,
+          title: 'App Name',
           debugShowCheckedModeBanner: Config.isDebug,
           theme: ThemeData(
             scaffoldBackgroundColor: ColorName.white,

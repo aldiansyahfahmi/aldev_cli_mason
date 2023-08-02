@@ -9,6 +9,7 @@ final sl = GetIt.instance;
 class Injections {
   Future<void> initialize() async {
     final sharedPreferences = await SharedPreferences.getInstance();
+    sl.registerLazySingleton<SharedPreferences>(() => sharedPreferences);
     sl.registerLazySingleton<Dio>(() => sl<DioHandler>().dio);
     sl.registerLazySingleton<DioHandler>(
       () => DioHandler(
