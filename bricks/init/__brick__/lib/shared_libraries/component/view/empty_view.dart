@@ -1,4 +1,3 @@
-import '/shared_libraries/utils/resources/assets.gen.dart';
 import 'package:flutter/material.dart';
 
 class EmptyView extends StatelessWidget {
@@ -7,7 +6,8 @@ class EmptyView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Assets.images.icons.global.empty.svg(),
+      child: SizedBox(),
+      // child: Assets.images.icons.global.empty.svg(),
     );
   }
 }

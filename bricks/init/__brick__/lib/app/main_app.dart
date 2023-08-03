@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:page_transition/page_transition.dart';
-import '../features/home/presentation/ui/home_screen.dart';
-import '../shared_libraries/utils/constants/app_constants.dart';
+import '../presentation/{{name.snakeCase()}}/ui/{{name.snakeCase()}}_screen.dart';
 import '../shared_libraries/utils/navigation/navigation_helper.dart';
 import '../shared_libraries/utils/navigation/router/app_routes.dart';
-import '../shared_libraries/utils/resources/colors.dart';
+import '../shared_libraries/utils/resources/colors.gen.dart';
 import '../shared_libraries/utils/setup/app_setup.dart';
 
 class MyApp extends StatelessWidget {
