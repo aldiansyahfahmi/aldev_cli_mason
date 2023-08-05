@@ -29,5 +29,15 @@ vars:
   name:
     type: string
     description: Your name
-    default: Init
-    prompt: What is your name?
+    default: Home
+    prompt: What is your init name?
+  appName:
+    type: string
+    description: Your name
+    default: MyApp
+    prompt: What is your app name?
+  appId:
+    type: string
+    description: Your name
+    default: com.aldev.app
+    prompt: What is your app id?
