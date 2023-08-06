@@ -6,7 +6,9 @@ abstract class HomeRouter {
 }
 
 class HomeRouterImpl implements HomeRouter {
-  NavigationHelper navigationHelper = NavigationHelperImpl();
+  final NavigationHelper navigationHelper;
+
+  HomeRouterImpl({required this.navigationHelper});
 
   @override
   void navigateToOtherScreen() {
