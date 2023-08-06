@@ -1,5 +1,5 @@
+import '../../../injections/injections.dart';
 import '../navigation/navigation_helper.dart';
-import '../navigation/router/auth_router.dart';
 
 class RegisterUtilsModule {
   RegisterUtilsModule() {
@@ -11,11 +11,5 @@ class RegisterUtilsModule {
         () => NavigationHelperImpl(),
       );
 
-  void _routers() {
-    sl.registerLazySingleton<HomeRouter>(
-      () => HomeRouterImpl(
-        navigationHelper: sl(),
-      ),
-    );
-  }
+  void _routers() {}
 }

@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       splitScreenMode: true,
       builder: (context, child) {
         return MaterialApp(
-          title: 'App Name',
+          title: '{{appName}}',
           debugShowCheckedModeBanner: Config.isDebug,
           theme: ThemeData(
             scaffoldBackgroundColor: ColorName.white,
@@ -29,18 +29,18 @@ class MyApp extends StatelessWidget {
               child: child!,
             );
           },
-          home: const HomeScreen(),
+          home: const {{name.pascalCase()}}Screen(),
           navigatorKey: NavigationHelperImpl.navigatorKey,
           onGenerateRoute: (settings) {
             switch (settings.name) {
               case AppRoutes.home:
                 return PageTransition(
-                  child: const HomeScreen(),
+                  child: const {{name.pascalCase()}}Screen(),
                   type: PageTransitionType.rightToLeft,
                 );
               default:
                 return PageTransition(
-                  child: const HomeScreen(),
+                  child: const {{name.pascalCase()}}Screen(),
                   type: PageTransitionType.rightToLeft,
                 );
             }

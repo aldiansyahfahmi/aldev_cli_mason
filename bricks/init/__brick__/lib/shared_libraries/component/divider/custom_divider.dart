@@ -11,7 +11,7 @@ class CustomDivider extends StatelessWidget {
     Key? key,
     this.height = 1,
     this.width = double.infinity,
-    this.color = ColorName.textFieldHintGrey,
+    this.color = ColorName.grey,
   }) : super(key: key);
 
   @override

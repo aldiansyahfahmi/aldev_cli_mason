@@ -6,11 +6,7 @@ import '../../utils/setup/app_setup.dart';
 import '../network/dio_handler.dart';
 
 class RegisterCoreModule {
-  RegisterCoreModule() {
-    _core();
-  }
-
-  Future<void> _core() async {
+  Future<void> core() async {
     final sharedPreferences = await SharedPreferences.getInstance();
     sl.registerLazySingleton<SharedPreferences>(() => sharedPreferences);
     sl.registerLazySingleton<Dio>(() => sl<DioHandler>().dio);

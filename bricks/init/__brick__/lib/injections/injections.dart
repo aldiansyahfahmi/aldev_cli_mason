@@ -7,12 +7,12 @@ final sl = GetIt.instance;
 
 class Injections {
   Future<void> initialize() async {
-    await _registerCore();
+    await _registerSharedLibraries();
     _registerDomains();
   }
 
-  void _registerSharedLibraries() {
-    RegisterCoreModule();
+  Future<void> _registerSharedLibraries() async {
+    await RegisterCoreModule().core();
     RegisterUtilsModule();
   }
 
