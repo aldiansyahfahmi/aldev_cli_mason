@@ -6,7 +6,7 @@ import '{{name.snakeCase()}}_state.dart';
 class {{name.pascalCase()}}Cubit extends Cubit<{{name.pascalCase()}}State> {
   final Get{{name.pascalCase()}}UseCase get{{name.pascalCase()}}UseCase;
 
-  {{name.pascalCase()}}Cubit({required get{{name.pascalCase()}}UseCase})
+  {{name.pascalCase()}}Cubit({required this.get{{name.pascalCase()}}UseCase})
       : super({{name.pascalCase()}}State({{name.camelCase()}}State: ViewData.initial()));
 
   void get{{name.pascalCase()}}() async {

@@ -4,9 +4,9 @@ import '{{name.snakeCase()}}_state.dart';
 import '{{name.snakeCase()}}_event.dart';
 
 class {{name.pascalCase()}}Bloc extends Bloc<{{name.pascalCase()}}Event, {{name.pascalCase()}}State> {
-  final {{name.pascalCase()}}UseCase {{name.pascalCase()}}UseCase;
+  final {{name.pascalCase()}}UseCase {{name.camelCase()}}UseCase;
 
-  {{name.pascalCase()}}Bloc({required {{name.pascalCase()}}UseCase}) : super(
+  {{name.pascalCase()}}Bloc({required this.{{name.camelCase()}}UseCase}) : super(
           {{name.pascalCase()}}State(
             {{name.camelCase()}}State: ViewData.initial(),
           ),
