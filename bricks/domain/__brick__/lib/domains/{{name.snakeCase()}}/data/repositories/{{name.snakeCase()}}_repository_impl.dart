@@ -1,3 +1,14 @@
+import 'package:dartz/dartz.dart';
+import 'package:dio/dio.dart';
+
+import '../../../../app/shared_libraries/core/model/api_response.dart';
+import '../../../../shared_libraries/utils/error/failure_response.dart';
+import '../../domain/repositories/{{name.snakeCase()}}_repository.dart';
+import '../datasources/remote/{{name.snakeCase()}}_remote_datasource.dart';
+import '../mapper/{{name.snakeCase()}}_mapper.dart';
+import '../../domain/entities/body/create_{{name.snakeCase()}}_request_entity.dart';
+import '../../domain/entities/response/{{name.snakeCase()}}_response_entity.dart';
+
 class {{name.pascalCase()}}RepositoryImpl implements {{name.pascalCase()}}Repository {
   final {{name.pascalCase()}}RemoteDataSource {{name.camelCase()}}RemoteDataSource;
   final {{name.pascalCase()}}Mapper {{name.camelCase()}}Mapper;
@@ -14,7 +25,7 @@ class {{name.pascalCase()}}RepositoryImpl implements {{name.pascalCase()}}Reposi
     try {
       final response = await {{name.camelCase()}}RemoteDataSource.create{{name.pascalCase()}}(
         create{{name.pascalCase()}}RequestDto: {{name.camelCase()}}Mapper
-            .mapCreate{{name.pascalCase()}}RequestEntityToCreate{{name.pascalCase()}}RequestDto(
+            .mapCreate{{name.pascalCase()}}RequestEntityToDto(
                 create{{name.pascalCase()}}RequestEntity),
       );
       return Right(response);
@@ -30,7 +41,7 @@ class {{name.pascalCase()}}RepositoryImpl implements {{name.pascalCase()}}Reposi
       final response =
           await {{name.camelCase()}}RemoteDataSource.get{{name.pascalCase()}}Details(id: id);
       return Right({{name.camelCase()}}Mapper
-          .map{{name.pascalCase()}}DataDtoTo{{name.pascalCase()}}DataEntity(response.data!));
+          .map{{name.pascalCase()}}DataDtoToEntity(response.data!));
     } on DioException catch (error) {
       return Left(FailureResponse.dio(error));
     }
@@ -42,7 +53,7 @@ class {{name.pascalCase()}}RepositoryImpl implements {{name.pascalCase()}}Reposi
     try {
       final response = await {{name.camelCase()}}RemoteDataSource.get{{name.pascalCase()}}s();
       return Right(
-          {{name.camelCase()}}Mapper.map{{name.pascalCase()}}DataDtoToEntity(response.data!));
+          {{name.camelCase()}}Mapper.mapList{{name.pascalCase()}}DataDtoToEntity(response.data!));
     } on DioException catch (error) {
       return Left(FailureResponse.dio(error));
     }

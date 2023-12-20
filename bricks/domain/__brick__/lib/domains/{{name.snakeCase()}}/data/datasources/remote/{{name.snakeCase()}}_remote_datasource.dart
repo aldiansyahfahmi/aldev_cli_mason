@@ -1,3 +1,10 @@
+import 'package:dio/dio.dart';
+
+import '../../../../../shared_libraries/core/network/models/api_response.dart';
+import '../../../../../shared_libraries/utils/constants/app_constants.dart';
+import '../../models/body/create_{{name.snakeCase()}}_request_dto.dart';
+import '../../models/response/{{name.snakeCase()}}_response_dto.dart';
+
 abstract class {{name.pascalCase()}}RemoteDataSource {
     Future<ApiResponse> create{{name.pascalCase()}}(
       {required Create{{name.pascalCase()}}RequestDto create{{name.pascalCase()}}RequestDto});

@@ -1,5 +1,10 @@
-
 import 'package:dartz/dartz.dart';
+
+import '../../../../app/shared_libraries/core/model/api_response.dart';
+import '../../../../shared_libraries/utils/error/failure_response.dart';
+import '../../../../shared_libraries/utils/usecase/usecase.dart';
+import '../entities/body/create_{{name.snakeCase()}}_request_entity.dart';
+import '../repositories/{{name.snakeCase()}}_repository.dart';
 
 class Create{{name.pascalCase()}}UseCase
     extends UseCase<ApiResponse, Create{{name.pascalCase()}}RequestEntity> {

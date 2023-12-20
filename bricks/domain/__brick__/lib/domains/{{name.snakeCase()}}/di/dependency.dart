@@ -1,3 +1,13 @@
+import '../../../injections/injections.dart';
+import '../data/datasources/remote/{{name.snakeCase()}}_remote_datasource.dart';
+import '../data/mapper/{{name.snakeCase()}}_mapper.dart';
+import '../data/repositories/{{name.snakeCase()}}_repository_impl.dart';
+import '../domain/repositories/{{name.snakeCase()}}_repository.dart';
+import '../domain/usecases/create_{{name.snakeCase()}}_usecase.dart';
+import '../domain/usecases/delete_{{name.snakeCase()}}_usecase.dart';
+import '../domain/usecases/get_{{name.snakeCase()}}_details_usecase.dart';
+import '../domain/usecases/get_{{name.snakeCase()}}s_usecase.dart';
+
 class {{name.pascalCase()}}Dependency {
   {{name.pascalCase()}}Dependency() {
     _registerDataSource();
